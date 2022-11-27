@@ -21,7 +21,7 @@ const PopularMoviesList = () => {
       <div className="movie-wrapper" key = {1}>
           <div className="movie-title">{movie.title}</div>
            <img className='movie-image' 
-           src= {`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
+           src= {`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`} alt=""/>
            
             <div className="movie-date">Release :{movie.release_date}</div>
             <div className="movie-rate">Rate : {movie.vote_average} </div>
