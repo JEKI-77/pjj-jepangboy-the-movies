@@ -37,7 +37,7 @@
 }
 .movie-search{
   height: 30px;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 32px;
   padding: 16px;
   font-weight: bold;
@@ -61,4 +61,12 @@
   font-weight: bold;
   font-size: 1.2em;
   text-decoration: underline;
+}
+
+.app-logo{
+  width: 200px;
+  height:150px;
+  margin-top: 40px;
+  border-radius: 20px;
+
 }

@@ -2,6 +2,7 @@
 import './App.css';
 import {getMovieList,searchMovie} from "./api"
 import { useEffect, useState } from 'react';
+import logo from "./image/PJJ.png"
 
 const App = () => {
 
@@ -42,8 +43,11 @@ const PopularMoviesList = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ジェキサプトラ The Movies</h1>
-        <input placeholder="好きな動画を書いてください..." className='movie-search'
+       <div>
+       <img src={logo} className='app-logo' alt='me'/>
+       </div>
+        <h1 >The Movies </h1>
+        <input placeholder="pengen cari film apa guyss..." className='movie-search'
         onChange = {({target}) => search (target.value)}
         />
         <div className="movie-container">
