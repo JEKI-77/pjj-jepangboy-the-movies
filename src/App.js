@@ -20,8 +20,9 @@ const PopularMoviesList = () => {
 
       <div className="movie-wrapper" key = {1}>
           <div className="movie-title">{movie.title}</div>
+          <image src="/public/IMG_4558.jpg"/>
            <img className='movie-image' 
-           src= {`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`} alt=""/>
+           src= {`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}alt="" />
            
             <div className="movie-date">Release :{movie.release_date}</div>
             <div className="movie-rate">Rate : {movie.vote_average} </div>
@@ -41,8 +42,8 @@ const PopularMoviesList = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Top Movies</h1>
-        <input placeholder="cari film kesayangan..." className='movie-search'
+        <h1>ジェキサプトラ The Movies</h1>
+        <input placeholder="好きな動画を書いてください..." className='movie-search'
         onChange = {({target}) => search (target.value)}
         />
         <div className="movie-container">
